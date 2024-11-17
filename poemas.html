@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poemas para Ti</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #ffb6c1, #ffdde1);
+            color: #333;
+            overflow-y: auto;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+
+        header {
+            padding: 30px 0;
+            border-bottom: 2px solid #f8a1b2;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #ff4b6e;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .poem {
+            background-color: #fff;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 700px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        .poem:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .poem:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        .poem:nth-child(3) {
+            animation-delay: 1s;
+        }
+        .poem:nth-child(4) {
+            animation-delay: 1.5s;
+        }
+        .poem:nth-child(5) {
+            animation-delay: 2s;
+        }
+        .poem:nth-child(6) {
+            animation-delay: 2.5s;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            padding: 15px;
+            background-color: #ff4b6e;
+            color: white;
+            text-align: center;
+            margin-top: 40px;
+            border-top: 2px solid #f8a1b2;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Estilos para el botón de volver */
+        .btn-back {
+            padding: 10px 20px;
+            background-color: #ff4b6e;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: #ff6f91;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Estilos para el mensaje flotante */
+        .message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+            color: white;
+            font-size: 3rem;
+            padding: 30px 50px;
+            border-radius: 25px;
+            display: none; /* El mensaje está oculto inicialmente */
+            z-index: 9999;
+            text-align: center;
+            opacity: 0;
+        }
+
+        .animate-message {
+            animation: animateIn 2s forwards;
+        }
+
+        /* Animación legendaria para el mensaje */
+        @keyframes animateIn {
+            0% {
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 0;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Animación para desaparecer el mensaje */
+        @keyframes animateOut {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Poemas para Ti</h1>
+        </header>
+
+        <!-- Poema 1 -->
+        <div class="poem">
+            <p>Te amo, una palabra que ha quedado corta para describir todo lo que siento por ti. Pero si hablamos del te amo, te amo con intensidad, sin prisa pero sin pausa. Te amo en tu caos y en tu paz. De verdad te amo, aun que no me lo creas, aun que siempre lo dudes, aun que a veces no te lo demuestre, así con sinceridad, y en la extensión de toda la palabra te amo. Te amo por todo lo que tu eres y créeme que nunca había amado con tanta intensidad a alguien, llegaste y te apoderaste de todo mi amor.</p>
+        </div>
+
+        <!-- Poema 2 -->
+        <div class="poem">
+            <p>Mi mente es para pensarte y mi corazón para amarte. Si yo pudiera te daría el mundo entero, pero lo único que te puedo dar es mi corazón sincero.</p>
+        </div>
+
+        <!-- Poema 3 -->
+        <div class="poem">
+            <p>Aunque lejos estés, mi corazón te siente cerca. En cada estrella, en cada sueño, nuestro amor siempre se refleja.</p>
+        </div>
+
+        <!-- Poema 4 -->
+        <div class="poem">
+            <p>En la noche oscura, brillas como estrella, Tu luz me guía, aunque estés tan lejos. Eres mi esperanza, mi amor, mi centella, En cada latido, en cada uno de mis sueños.</p>
+        </div>
+
+        <!-- Poema 5 -->
+        <div class="poem">
+            <p>Eres mi enanita, mi dulce amor, En cada latido, en cada rincón. Aunque la distancia nos separe hoy, Tu amor me envuelve, me llena de sol.</p>
+        </div>
+
+        <!-- Poema 6 -->
+        <div class="poem">
+            <p>En la distancia te siento cerca, tu amor es mi luz, mi estrella eterna. Cada día, en cada momento, mi corazón late por ti, sin aliento.</p>
+        </div>
+
+        <button class="btn-back" onclick="window.location.href='index.html'">Volver al Inicio</button>
+
+    </div>
+
+    <footer>
+        <p>Te amo mucho 😘</p>
+    </footer>
+
+    <!-- Mensaje flotante que aparece después de 5 segundos -->
+    <div class="message" id="message">
+        ¿Recuerdas cuando nos conocimos?
+    </div>
+
+    <script>
+        // Mostrar el mensaje después de 5 segundos
+        setTimeout(function() {
+            var message = document.getElementById('message');
+            message.style.display = 'block';
+            message.classList.add('animate-message'); // Agregar la animación de entrada
+
+            // Desaparecer el mensaje después de 3 segundos
+            setTimeout(function() {
+                message.classList.remove('animate-message'); // Remover la animación de entrada
+                message.classList.add('animate-out'); // Agregar la animación de salida
+            }, 3000); // 3000 milisegundos = 3 segundos para desaparecer
+        }, 5000); // 5000 milisegundos = 5 segundos para aparecer
+    </script>
+
+</body>
+</html>
